@@ -9,6 +9,13 @@ public class SecventaCaracter extends SecventaDecorator {
 
     public String parcurge() {
         index++;
+        if (index >= cuv.length()) {
+            cuv = super.parcurge();
+            index = 0;
+            if (cuv == null) {
+                return null;
+            }
+        }
         return cuv.charAt(index) + "";
     }
 }
