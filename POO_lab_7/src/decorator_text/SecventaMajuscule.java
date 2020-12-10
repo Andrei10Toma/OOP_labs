@@ -1,8 +1,8 @@
 package decorator_text;
 
 public class SecventaMajuscule extends SecventaDecorator {
+    String cuvMaj;
     int index = -1;
-    String cuvMaj = super.parcurge();
 
     public SecventaMajuscule(SecventaCuvant cuv) {
         super(cuv);
@@ -11,6 +11,7 @@ public class SecventaMajuscule extends SecventaDecorator {
     @Override
     public String parcurge() {
         index++;
-        return Character.toUpperCase(cuvMaj.charAt(index)) + "";
+        cuvMaj = super.parcurge();
+        return cuvMaj.toUpperCase();
     }
 }

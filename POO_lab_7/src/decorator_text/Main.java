@@ -9,12 +9,10 @@ public class Main {
         }
         System.out.println(secventaCuvant.parcurge());
 
-        SecventaCuvant secventaCuvant1 = new SecventaCuvant("Avem laborator la POO acum");
+        SecventaCuvant secventaCuvant1 = new SecventaCuvant("Avem lab de Design Patterns la POO");
         SecventaMajuscule secventaMajuscule = new SecventaMajuscule(secventaCuvant1);
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < secventaCuvant1.cuvinte.length; i++) {
             System.out.println(secventaMajuscule.parcurge());
         }
-        System.out.println(secventaCuvant1.parcurge());
-        System.out.println(secventaCuvant1.parcurge());
     }
 }
