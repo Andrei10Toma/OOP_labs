@@ -3,8 +3,8 @@ package bonus;
 import java.util.Objects;
 
 public class Pacient implements Comparable<Pacient> {
-    private String name;
-    private int priority;
+    private final String name;
+    private final int priority;
 
     public Pacient(String name, int priority) {
         this.name = name;
